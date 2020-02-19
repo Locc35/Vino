@@ -1,0 +1,247 @@
+main {
+
+    padding-top: 85px;
+}
+
+
+#bienvenue {
+
+    padding: 100px 50px;
+    background: url(../images/fonds/bg_header.jpg) center center no-repeat;
+    background-size: cover;
+
+    img {
+
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+#moment {
+
+    padding: 50px 30px;
+    text-align: center;
+
+    h2 {
+
+        text-align: center;
+        color: #004C45;
+    }
+
+    .packshot {
+
+        margin-top: 50px;
+        width: auto;
+
+    }
+
+    img {
+
+        width: 100%;
+    }
+}
+
+.item-1::before {
+
+    content: url(../images/picto/pictovin.svg);
+    display: block;
+    width: 50px;
+    left: calc(50% - 30px);
+    position: relative;
+}
+
+#domaine {
+    padding: 50px 30px;
+    text-align: center;
+
+    h3 {
+
+        text-align: center;
+        color: #004C45;
+    }
+}
+
+#domaine::before {
+
+    content: url(../images/picto/domain.svg);
+    display: block;
+    width: 100px;
+    left: calc(50% - 40px);
+    position: relative;
+}
+
+#vignoble {
+
+    padding: 50px 30px;
+    text-align: center;
+
+    h3 {
+
+        text-align: center;
+        color: #004C45;
+    }
+}
+
+#vignoble::before {
+
+    content: url(../images/picto/grape.svg);
+    display: block;
+    width: 50px;
+    left: calc(50% - 30px);
+    position: relative;
+}
+
+#galerie {
+
+    padding: 50px 30px;
+}
+
+.flex__galerie {
+
+    display: flex;
+    flex-direction: column;
+
+    div {
+
+        width: auto;
+    }
+}
+
+.flex__galerie img {
+
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width:768px) {
+
+    #bienvenue {
+
+        img {
+
+            width: 50%;
+        }
+    }
+
+    .btn-vino {
+
+        margin-top: 50px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    main {
+
+        padding-top: 64px;
+    }
+
+    #bienvenue {
+
+        img {
+
+            width: 35%;
+        }
+    }
+
+    #moment {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 960px;
+        margin: 0 auto;
+
+        img {
+
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    .item-1 {
+
+        flex-basis: 50%;
+    }
+
+    .packshot {
+
+        flex-basis: 50%;
+    }
+
+    #domaine {
+
+        background: url(../images/fonds/bg_domaine.jpg) center center;
+        background-size: cover;
+        color: white;
+
+        h3 {
+
+            color: #009E8F;
+        }
+
+        article {
+
+            width: 960px;
+            margin: 0 auto;
+        }
+    }
+
+    #vignoble {
+
+        background: url(../images/fonds/bg_vignoble.jpg) center center;
+        background-size: cover;
+        color: white;
+
+        h3 {
+
+            color: #009E8F;
+        }
+
+        article {
+
+            width: 960px;
+            margin: 0 auto;
+        }
+    }
+
+    #galerie {
+
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    .flex__galerie {
+
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        div {
+
+            flex-basis: 45%;
+        }
+    }
+}
+
+@media screen and (min-width:1440px) {
+
+    #bienvenue {
+
+        img {
+
+            width: 20%;
+        }
+    }
+
+    #moment {
+
+        width: 1140px;
+        
+    }
+
+
+}
